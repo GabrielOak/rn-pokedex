@@ -3,7 +3,8 @@ import { StatusBar } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import PokemonScreen from './screens/PokemonScreen';
+import PokemonScreen from './views/PokemonScreen';
+import PokemonDetail from './views/PokemonDetail';
 
 const Stack = createStackNavigator();
 
@@ -14,6 +15,7 @@ const App = () => {
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name="Pokemons" component={PokemonScreen} />
+          <Stack.Screen name="Detail" component={PokemonDetail} />
         </Stack.Navigator>
       </NavigationContainer>
     </>
