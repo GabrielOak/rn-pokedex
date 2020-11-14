@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, memo } from 'react';
 import { FlatList, View, TouchableHighlight, StatusBar } from 'react-native';
 
 import Card from '../components/card/Card';
@@ -50,4 +50,4 @@ const PokemonScreen = ({ navigation }) => {
   );
 };
 
-export default PokemonScreen;
+export default memo(PokemonScreen);
